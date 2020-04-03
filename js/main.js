@@ -34,18 +34,28 @@ xmlhttp.onreadystatechange = function() {
         // var weatherDescriptionContainer = document.getElementById('weather-description');
         // weatherDescriptionContainer.innerHTML = apiResult.weather[0].description;
 
-        console.log(apiResult.heights[1].height);
+        console.log(apiResult);
 
-        var heightButtonOne = document.getElementById('height-morning');
-        var heightButtonTwo = document.getElementById('height-mid-day');
-        var heightButtonTwo = document.getElementById('height-evening');
+        var heightCurrent = document.getElementById('height-current');
+        var heightThree = document.getElementById('height-three');
+        var heightSix = document.getElementById('height-six');
         var heightContainer = document.getElementById('height-container');
 
-        function showHeight() {
-            heightContainer.innerHTML = apiResult.heights[0].height;
+        function showHeightCurrent() {
+            heightContainer.innerHTML = apiResult.heights[4].height;
         }
 
-        heightButtonOne.addEventListener('click', showHeight);
+        function showHeightThree() {
+            heightContainer.innerHTML = apiResult.heights[10].height;
+        }
+
+        function showHeightSix() {
+            heightContainer.innerHTML = apiResult.heights[16].height;
+        }
+
+        heightCurrent.addEventListener('click', showHeightCurrent);
+        heightThree.addEventListener('click', showHeightThree);
+        heightSix.addEventListener('click', showHeightSix);
         
         
 
@@ -54,5 +64,5 @@ xmlhttp.onreadystatechange = function() {
 
     }
 };
-xmlhttp.open('GET', 'https://www.worldtides.info/api?heights&lat=33.768321&lon=-118.195617&key=fc3990db-3425-40fb-8450-97ad3c2cf8be', true);
+xmlhttp.open('GET', 'https://www.worldtides.info/api?heights&lat=41.4921&lon=-71.3113&key=fc3990db-3425-40fb-8450-97ad3c2cf8be', true);
 xmlhttp.send();
