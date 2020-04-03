@@ -7,6 +7,20 @@
     border: 0;
 }
 
+html {
+    font-family: @open-sans;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: @roboto;
+}
+
 .container {
     padding: 0 5%;
 }
@@ -103,5 +117,16 @@ main {
     .founder {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        div {
+            padding: 20px 0;
+            width: 100%;
+            &:nth-child(2) {
+                text-align: center;
+            } 
+        }
+        img {
+            max-width: 300px;
+        }
     }
 }
