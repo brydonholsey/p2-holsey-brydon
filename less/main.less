@@ -6,3 +6,43 @@
     padding: 0;
     border: 0;
 }
+
+.container {
+    padding: 0 5%;
+}
+
+header {
+    background-color: @teal;
+    height: 10vh;
+    color: white;
+    padding: 15px 0;
+    #page-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    nav {
+        align-self: flex-end;
+    }
+
+    .sub-menu {
+        position: absolute;
+        background-color: @red;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .hidden {
+        height:0;
+        width: 0;
+        overflow: hidden;
+        transition: width .3s ease-in-out;
+    }
+    .show {
+        height:100%;
+        width: 100%;
+    }
+}
