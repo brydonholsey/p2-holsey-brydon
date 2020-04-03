@@ -7,3 +7,12 @@ function toggleMenu() {
 }
 
 hamburgerIcon.addEventListener('click', toggleMenu);
+
+var upcomingPrograms = document.getElementById('up-prog');
+var progContent = document.getElementById('program-content')
+
+function togglePrograms() {
+    progContent.classList.toggle('show');
+}
+
+upcomingPrograms.addEventListener('click', togglePrograms);

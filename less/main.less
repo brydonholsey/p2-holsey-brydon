@@ -113,20 +113,56 @@ main {
     #sec-1 {
         background-color: @yellow;
         padding: 50px 0;
-    }
-    .founder {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        div {
-            padding: 20px 0;
-            width: 100%;
-            &:nth-child(2) {
-                text-align: center;
-            } 
+        .founder {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            div {
+                padding: 20px 0;
+                width: 100%;
+                &:nth-child(2) {
+                    text-align: center;
+                } 
+            }
+            img {
+                max-width: 300px;
+            }
         }
-        img {
-            max-width: 300px;
+    }
+    #sec-2 {
+        height: 400px;
+        width: 100%;
+        background-image: url('../images/bay-boats.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #sec-3 {
+        background-color: @red;
+        padding: 30px 0;
+        #up-prog {
+            text-align: center;
+        }
+        #program-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            div {
+                padding:15px;
+                &:nth-child(1) {
+                    padding-top:40px;
+                }
+            }
+        }
+        .hidden {
+            height:0;
+            width: 0;
+            overflow: hidden;
+            transition: height .3s ease-in-out;
+        }
+        .show {
+            height:100%;
+            width: 100%;
         }
     }
 }
