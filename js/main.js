@@ -28,14 +28,7 @@ xmlhttp.onreadystatechange = function() {
 
         //Code Dealing With The API Data Goes Here
 
-        // var cityNameContainer = document.getElementById('city-name');
-        // cityNameContainer.innerHTML = apiResult.name;
-
-        // var weatherDescriptionContainer = document.getElementById('weather-description');
-        // weatherDescriptionContainer.innerHTML = apiResult.weather[0].description;
-
-        console.log(apiResult);
-
+       
         var heightCurrent = document.getElementById('height-current');
         var heightThree = document.getElementById('height-three');
         var heightSix = document.getElementById('height-six');
