@@ -170,9 +170,19 @@ main {
         padding: 30px 0;
         .tides{
             display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
         i {
             font-size: 5rem;
+        }
+        .height-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .tide-info {
+            align-self: flex-start;
         }
     }
     button {
@@ -180,5 +190,6 @@ main {
         background-color: inherit;
         padding: 10px 15px;
         border: 1px solid #fff;
+        margin: 15px;
     }
 }

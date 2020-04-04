@@ -39,27 +39,59 @@ xmlhttp.onreadystatechange = function() {
         var heightCurrent = document.getElementById('height-current');
         var heightThree = document.getElementById('height-three');
         var heightSix = document.getElementById('height-six');
+        var heightTwelve = document.getElementById('height-twelve');
         var heightContainer = document.getElementById('height-container');
+        var height = apiResult.heights.height;
+        var heightText = document.getElementById('height-text');
 
         function showHeightCurrent() {
             heightContainer.innerHTML = apiResult.heights[4].height;
+            if (height > 0.3) {
+                heightText.innerHTML = 'The tide is high'
+              } else if (height < -0.3) {
+                heightText.innerHTML = 'The tide is low'
+              } else {
+                heightText.innerHTML = 'The tide is mid-tide'
+              }
         }
 
         function showHeightThree() {
             heightContainer.innerHTML = apiResult.heights[10].height;
+            if (height > 0.3) {
+                heightText.innerHTML = 'The tide is high'
+              } else if (height < -0.3) {
+                heightText.innerHTML = 'The tide is low'
+              } else {
+                heightText.innerHTML = 'The tide is mid-tide'
+              }
         }
 
         function showHeightSix() {
             heightContainer.innerHTML = apiResult.heights[16].height;
+            if (height > 0.3) {
+                heightText.innerHTML = 'The tide is high'
+              } else if (height < -0.3) {
+                heightText.innerHTML = 'The tide is low'
+              } else {
+                heightText.innerHTML = 'The tide is mid-tide'
+              }
+        }
+
+        function showHeightTwelve() {
+            heightContainer.innerHTML = apiResult.heights[28].height;
+            if (height > 0.3) {
+                heightText.innerHTML = 'The tide is high'
+              } else if (height < -0.3) {
+                heightText.innerHTML = 'The tide is low'
+              } else {
+                heightText.innerHTML = 'The tide is mid-tide'
+              }
         }
 
         heightCurrent.addEventListener('click', showHeightCurrent);
         heightThree.addEventListener('click', showHeightThree);
         heightSix.addEventListener('click', showHeightSix);
-        
-        
-
-        
+        heightTwelve.addEventListener('click', showHeightTwelve);
 
 
     }
