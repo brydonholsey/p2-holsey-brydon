@@ -19,6 +19,16 @@ h4,
 h5,
 h6 {
     font-family: @roboto;
+    padding: .3rem 0;
+}
+
+p {
+    padding: .2rem 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .container {
@@ -33,6 +43,9 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .desktop-title {
+        display: none;
+    }
     #page-header {
         background-color: @teal;
         padding-top: 15px;
@@ -55,7 +68,7 @@ header {
         z-index:2;
     }
     
-    nav {
+    #mobile-nav {
         align-self: flex-end;
     }
 
@@ -188,5 +201,71 @@ main {
         padding: 10px 15px;
         border: 1px solid #fff;
         margin: 15px;
+    }
+}
+
+@media (min-width: @phone) {
+    
+}
+
+@media (min-width: @laptop) {
+    header {
+        #page-header {
+            height:100vh;
+            width: 20%;
+            background-color: rgba(134, 209, 205, 0.9);
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+        .desktop-title {
+            display: block;
+            padding: 30px 0;
+        }
+        #hamburger-icon, .mobile-title {
+            display: none;
+        }
+        #desktop-menu {
+            height: 100vh;
+            text-align: right;
+            ul {
+                li {
+                    padding: 30px 0;
+                    list-style: none;
+                }
+            }
+            hr {
+                border: 1px solid #fff;
+                width: 100%;
+                margin: 30px auto;
+            }
+            .social-icons {
+                padding: 30px 0;
+                text-align: center;
+                font-size: 1.3rem;
+                i {
+                    padding: 0 10%;
+                }
+            }
+            .contact-content {
+                padding: 30px 0;
+            }
+        }
+    }
+
+    main {
+        #sec-1 {
+            .founder {
+                flex-direction: row;
+            }
+        }
+        #sec-3 {
+            #program-content {
+                flex-direction: row;
+                div:nth-child(1) {
+                    padding-top: 15px;
+                }
+            }
+        }
     }
 }
