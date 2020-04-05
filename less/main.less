@@ -80,7 +80,7 @@ header {
 
     .sub-menu {
         position: absolute;
-        background-color: @red;
+        background-color: @teal;
         width: 100%;
         left: 0;
         text-align: center;
@@ -324,6 +324,11 @@ main {
         }
         .programs {
             display: flex;
+            flex-wrap: wrap;
+            div {
+                max-width: 27%;
+                padding: 15px 28px;
+            }
         }
     }
 }
