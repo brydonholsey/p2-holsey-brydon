@@ -36,16 +36,19 @@ a {
 }
 
 header {
-    height: 100vh;
-    color: white;
-    font-family: @roboto;
-    background-image: url('../images/header-img.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .header-nav {
+        height: 100vh;
+        color: white;
+        font-family: @roboto;
+        background-image: url('../images/header-img.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .desktop-title {
         display: none;
     }
+
     #page-header {
         background-color: @teal;
         padding-top: 15px;
@@ -53,6 +56,9 @@ header {
         display: flex;
         flex-direction: column;
         text-align: center;
+        #desktop-nav {
+            display: none;
+        }
         h1 {
             font-style: italic;
             .light {
@@ -120,10 +126,15 @@ header {
             object-fit: cover;
         }
     }
+    
 }
 
+// .int-header {
+//     height: 10vh;
+// }
+
 main {
-    #sec-1 {
+    .sec-1 {
         background-color: @yellow;
         padding: 50px 0;
         .founder {
@@ -142,7 +153,7 @@ main {
             }
         }
     }
-    #sec-2 {
+    .sec-2 {
         height: 400px;
         width: 100%;
         background-image: url('../images/bay-boats.png');
@@ -150,7 +161,7 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #sec-3 {
+    .sec-3 {
         background-color: @red;
         padding: 30px 0;
         #up-prog {
@@ -178,7 +189,7 @@ main {
             width: 100%;
         }
     }
-    #sec-4 {
+    .sec-4 {
         background-color:@teal;
         padding: 30px 0;
         .tides{
@@ -214,6 +225,9 @@ main {
             height:100vh;
             width: 20%;
             background-color: rgba(134, 209, 205, 0.9);
+            #desktop-nav {
+                display: block;
+            }
             h1 {
                 font-size: 2.5rem;
             }
@@ -254,12 +268,12 @@ main {
     }
 
     main {
-        #sec-1 {
+        .sec-1 {
             .founder {
                 flex-direction: row;
             }
         }
-        #sec-3 {
+        .sec-3 {
             #program-content {
                 flex-direction: row;
                 div:nth-child(1) {

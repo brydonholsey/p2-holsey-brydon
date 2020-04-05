@@ -25,6 +25,10 @@ function togglePrograms() {
 
 upcomingPrograms.addEventListener('click', togglePrograms);
 
+if (window.matchMedia("(min-width: 998px)").matches) {
+    progContent.classList.add('show');
+}
+
 
 
 //api

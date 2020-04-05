@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 2 | Brydon Holsey</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="int-header">
+        <div class="header-nav">
+            <div id="page-header" class="container">
+                <nav id="desktop-nav">
+                    <div class="desktop-title"><h1>Sail <span class="light"> to</span> Prevail</h1></div>
+                    <div id="desktop-menu">
+                        <ul>
+                            <li><a href="about.html">About Us <i class="fas fa-plus"></i></a></li>
+                            <li><a href="locations.html">Locations <i class="fas fa-plus"></i></a></li>
+                            <li><a href="register.html">Register <i class="fas fa-plus"></i></a></li>
+                        </ul>
+                        <hr>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <hr>
+                        <div class="contact-content">
+                            <h3>Contact</h3>
+                            <p>12 America's Cup Ave<br>
+                            Newport, RI <br>
+                            401-555-2643</p>
+                        </div>
+                    </div>
+                </nav>
+                <nav id="mobile-nav">
+                    <div id="hamburger-icon"><i class="fas fa-bars"></i></div>
+                    <div id="hamburger-menu" class="sub-menu hidden">
+                        <ul>
+                            <li><a href="about.html">About Us <i class="fas fa-plus"></i></a></li>
+                            <li><a href="locations.html">Locations <i class="fas fa-plus"></i></a></li>
+                            <li><a href="register.html">Register <i class="fas fa-plus"></i></a></li>
+                        </ul>
+                        <hr>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <hr>
+                        <div class="contact-content">
+                            <h3>Contact</h3>
+                            <p>12 America's Cup Ave<br>
+                            Newport, RI <br>
+                            401-555-2643</p>
+                        </div>
+                    </div>
+                </nav>
+                <h1 class="mobile-title">Sail <span class="light"> to</span> Prevail</h1>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="header-img">
+                <img src="images/about-img.png" alt="About header image" title="About Us Image">
+            </div>
+            <div class="header-text">
+                <h2>About Us</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="sec-1">
+            <div class="container founder">
+                <div>
+                <h2>Our Founder</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                    <img src="images/founder.png" alt="Founder" title="Founder">
+                </div>
+            </div>
+
+        </article>
+        <article class="sec-2">
+        </article>
+        <article class="sec-3">
+            <div class="container">
+                <div id="up-prog">
+                    <h2>Upcoming Programs <i class="fas fa-chevron-down"></i></h2>
+                </div>
+                <div id="program-content" class="hidden">
+                    <div>
+                        <h3>Physical Disabilities</h3>
+                        <h4>June 13-17</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum commodi, tenetur, consequuntur sunt suscipit dolorem in voluptate minima cum distinctio dolor, eius et? Sed, cum dolor sequi dolorum ex minus.</p>
+                    </div>
+                    <div>
+                        <h3>Sail Away From Cancer</h3>
+                        <h4>July 5-10</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum commodi, tenetur, consequuntur sunt suscipit dolorem in voluptate minima cum distinctio dolor, eius et? Sed, cum dolor sequi dolorum ex minus.</p>
+                    </div>
+                    <div>
+                        <h3>Emotional Disabilities</h3>
+                        <h4>August 8-13</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum commodi, tenetur, consequuntur sunt suscipit dolorem in voluptate minima cum distinctio dolor, eius et? Sed, cum dolor sequi dolorum ex minus.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="sec-4">
+            <div class="container tides">
+                <div>
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="height-buttons">
+                    <div>
+                        <button id="height-current">Current Tide</button>
+                        <button id="height-three">Tide +3 Hrs</button>
+                    </div>
+                    <div>
+                        <button id="height-six">Tide +6 Hrs</button>
+                        <button id="height-twelve">Tide +12 Hrs</button>
+                    </div>
+                </div>
+                <div class="tide-info">
+                    <h3>The tide is:</h3>
+                    <p id="height-container"></p>
+                    <p id="height-text"></p>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
