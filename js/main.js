@@ -104,6 +104,9 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open('GET', 'https://www.worldtides.info/api?heights&lat=41.4921&lon=-71.3113&key=fc3990db-3425-40fb-8450-97ad3c2cf8be', true);
 xmlhttp.send();
 
+
+//location tabs
+
 var buttonOne = document.getElementById('button-one');
 var buttonTwo = document.getElementById('button-two');
 var contentOne = document.getElementById('location-content-one');

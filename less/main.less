@@ -242,18 +242,19 @@ main {
     .locations {
         height: 640px;
         #location-buttons {
+            #button-one, #button-two {
+                padding: 10px 15px;
+                border: none;
+                font-size: 1rem;
+            }
             #button-one {
                 margin: 0;
-                padding: 10px 15px;
                 background-color: #fff;
-                border: none;
                 color: @teal;
             } 
             #button-two {
                 margin: -4px;
-                padding: 10px 15px;
                 background-color: @teal;
-                border: none;
             }  
         }
         #location-content {
@@ -295,8 +296,22 @@ main {
     
 }
 
-@media (min-width: @phone) {
-    
+@media (min-width: @tablet) {
+    main {
+        .locations {
+            height: 500px;
+            .map {
+                width: 50%;
+            }
+        }
+        #location-content-one, #location-content-two {
+            display: flex;
+            justify-content: space-between;
+        }
+        #location-text-one, #location-text-two {
+            width: 45%;
+        }
+    }
 }
 
 @media (min-width: @laptop) {
