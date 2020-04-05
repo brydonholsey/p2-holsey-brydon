@@ -129,9 +129,35 @@ header {
     
 }
 
-// .int-header {
-//     height: 10vh;
-// }
+#int-header {
+    display:flex;
+    flex-direction: column;
+    .header-nav{
+        background-image: none;
+        height: 10%;
+    } 
+    .header-bottom {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    }
+    #header-about {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../images/about-img.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .about-header-text {
+        padding:50px;
+        color: @teal;
+    }
+}
 
 main {
     .sec-1 {
@@ -267,6 +293,21 @@ main {
         }
     }
 
+    #int-header {
+        flex-direction: row;
+        #page-header {
+            width: auto;
+            padding: 15px 17%;
+        }
+        .header-nav {
+            background-image: none;
+            width: 30%;
+        }
+        .header-content {
+            width: 70%;
+        }
+    }
+
     main {
         .sec-1 {
             .founder {
@@ -280,6 +321,9 @@ main {
                     padding-top: 15px;
                 }
             }
+        }
+        .programs {
+            display: flex;
         }
     }
 }
