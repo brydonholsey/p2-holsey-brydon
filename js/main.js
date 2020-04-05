@@ -103,3 +103,22 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open('GET', 'https://www.worldtides.info/api?heights&lat=41.4921&lon=-71.3113&key=fc3990db-3425-40fb-8450-97ad3c2cf8be', true);
 xmlhttp.send();
+
+var buttonOne = document.getElementById('button-one');
+var buttonTwo = document.getElementById('button-two');
+var contentOne = document.getElementById('location-content-one');
+var contentTwo = document.getElementById('location-content-two');
+
+
+function tabClickOne () {
+    contentOne.classList.add('show-content');
+    contentTwo.classList.remove('show-content');
+}
+
+function tabClickTwo () {
+    contentTwo.classList.add('show-content');
+    contentOne.classList.remove('show-content');
+}
+
+buttonOne.addEventListener('click', tabClickOne);
+buttonTwo.addEventListener('click', tabClickTwo);
