@@ -22,6 +22,11 @@ h6 {
     padding: .3rem 0;
 }
 
+h4 {
+    font-weight: 300;
+    font-style: italic;
+}
+
 p {
     padding: .2rem 0;
 }
@@ -144,10 +149,15 @@ header {
         h2 {
             font-size: 3rem;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 600;
+            font-family: @open-sans;
+            letter-spacing: 0.2rem;
+            span {
+                font-weight: 100;
+            }
         }
     }
-    #header-about {
+    #header-about, #header-locations {
         background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../images/about-img.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -156,6 +166,10 @@ header {
     .about-header-text {
         padding:50px;
         color: @teal;
+    }
+    .locations-header-text {
+        padding:50px;
+        color: @yellow;
     }
 }
 
@@ -243,7 +257,7 @@ main {
         height: 640px;
         #location-buttons {
             #button-one, #button-two {
-                padding: 10px 15px;
+                padding: 14px 50px;
                 border: none;
                 font-size: 1rem;
             }
